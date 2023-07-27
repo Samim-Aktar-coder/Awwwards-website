@@ -49,5 +49,28 @@ fixedNav.addEventListener('mouseleave', () => {
 
 
 document.body.addEventListener('click', () => {
-    console.log('click')
-})
+    console.log('click');
+});
+
+//!============= SWIPER JS ========
+let swiper = new Swiper(".nominees__content", {
+    spaceBetween: 30,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+        },
+        610: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+        },
+        1100: {
+            slidesPerView: 3,
+            spaceBetween: 40,
+        }
+    }
+});

@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--!========== REMIX-ICON ==========-->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <!--!========== SWIPER CSS LINK  ==========-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.0.4/swiper-bundle.css"
+        integrity="sha512-3OuH/9eh0Sx9s/c23ZFG5SJb3GvBluF9cdGgQXhZyMyId4GP87W9QBgkHmocx+8kZaCZmXQUUuLOD4Q4f5PaWQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="shortcut icon" href="./img/awwwards-icon-white.svg" type="image/x-icon">
     <link rel="stylesheet" href="./style.css">
     <script src="./script.js" defer></script>
@@ -148,6 +152,7 @@
 
 
     <main>
+
         <!--!========== HOME ============-->
         <section class="home section" id="sotd">
             <h1 class="heading">Sites of the day</h1>
@@ -179,7 +184,7 @@
                 </div>
 
                 <button>
-                    Explore SOTD
+                    <a href="https://if-an-a-bomb-falls.tftl.agency/" target="_blank">Explore SOTD</a>
                 </button>
             </div>
 
@@ -207,8 +212,238 @@
                 </div>
             </div>
         </section>
-        
+
+        <!--!========== NEWS ============-->
+        <section class="news section">
+            <h4 class="title">News and Updates</h4>
+            <div class="heading">
+                <h2>Follow what's brand <br>
+                    new in digital design.</h2>
+                <p>Don't miss the <span>latest</span> happenings on <span>awwwards</span>.</p>
+            </div>
+
+            <div class="new__content flex">
+                <div class="w-news">
+                    <p class="title">w.news</p>
+                    <div class="item">
+                        <img src="./img/news-1.jpeg">
+                        <div class="info">
+                            <p>Element of the Day</p>
+                            <h3>Scroll animation of elements on...</h3>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="./img/news-2.jpg">
+                        <div class="info">
+                            <p>News - June 27, 2023</p>
+                            <h3>C2 Montréal by KOKI-KIKO and...</h3>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="./img/news-3.jpg">
+                        <div class="info">
+                            <p>News - May 24, 2023</p>
+                            <h3>Engine Station by MONOGRID: ...</h3>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="./img/news-4.jpg">
+                        <div class="info">
+                            <p>News - May 10, 2023</p>
+                            <h3>Reinventing Locomotive® Win...</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-creators">
+                    <p class="title">w.creators - close to you</p>
+                    <div class="item">
+                        <img src="./img/news-creator-1.png">
+                        <div class="info">
+                            <p>Agency</p>
+                            <h3>Clay</h3>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="./img/news-creator-2.jpg">
+                        <div class="info">
+                            <p>Agency</p>
+                            <h3>Locomotive</h3>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="./img/news-creator-3.png">
+                        <div class="info">
+                            <p>Freelance - India</p>
+                            <h3>Prajakta Rane</h3>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="./img/news-creator-4.jpg">
+                        <div class="info">
+                            <p>Freelance - India</p>
+                            <h3>Jitin Kumar</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-featured">
+                    <p class="title">Featured</p>
+                    <div class="w-featured-item">
+                        <img src="./img/news-featured-img.png">
+                        <p>An inspiring event for the digital design community</p>
+                        <h3>Early Bird Tickets on sale for a limited time, grab yours here!</h3>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!--!========== NOMINEES ============-->
+        <section class="section nominees" id="nominees">
+            <h4 class="title">Latest</h4>
+            <h1 class="heading">NOMINEES</h1>
+            <div class="subtitle">Vote for the latest websites on awwwards</div>
+
+            <div class="nominees__content flex swiper">
+                <div class="swiper-wrapper">
+
+                    <div class="nominees-item swiper-slide">
+                        <div class="nominee__img">
+                            <img src="./img/nominees-1.jpg">
+                            <div class="layer">
+                                <button><i class="ri-arrow-right-line"></i> Vote Now</button>
+                                <div class="info">
+                                    <p>WEBSITE</p>
+                                    <h3>EXPO 58 - Immersive Experience</h3>
+                                </div>
+
+                                <div class="icons">
+                                    <i class="ri-arrow-right-up-line"></i>
+                                    <i class="ri-bookmark-line"></i>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="item__data">
+                            <h3>EXPO 58 - Immersive Experience</h3>
+                            <div class="creator">
+                                <p>by</p>
+                                <img src="./img/creator-1.png" alt="">
+                                <h3>MONOGRID</h3>
+                                <p>Pro</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="nominees-item swiper-slide">
+                        <div class="nominee__img">
+                            <img src="./img/nominees-2.png">
+                            <div class="layer">
+                                <button><i class="ri-arrow-right-line"></i> Vote Now</button>
+                                <div class="info">
+                                    <p>WEBSITE</p>
+                                    <h3>Fantastic Art Studios</h3>
+                                </div>
+
+                                <div class="icons">
+                                    <i class="ri-arrow-right-up-line"></i>
+                                    <i class="ri-bookmark-line"></i>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="item__data">
+                            <h3>Fantastic Art Studios</h3>
+                            <div class="creator">
+                                <p>by</p>
+                                <img src="./img/creator-1.png" alt="">
+                                <h3>Fuerza Studio</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="nominees-item swiper-slide">
+                        <div class="nominee__img">
+                            <img src="./img/nominees-3.png">
+                            <div class="layer">
+                                <button><i class="ri-arrow-right-line"></i> Vote Now</button>
+                                <div class="info">
+                                    <p>WEBSITE</p>
+                                    <h3>Meta - Escape Plan</h3>
+                                </div>
+
+                                <div class="icons">
+                                    <i class="ri-arrow-right-up-line"></i>
+                                    <i class="ri-bookmark-line"></i>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="item__data">
+                            <h3>Meta - Escape Plan</h3>
+                            <div class="creator">
+                                <p>by</p>
+                                <img src="./img/creator-1.png" alt="">
+                                <h3>makemepulse</h3>
+                                <p>Pro</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="nominees-item swiper-slide">
+                        <div class="nominee__img">
+                            <img src="./img/nominees-4.jpg">
+                            <div class="layer">
+                                <button><i class="ri-arrow-right-line"></i> Vote Now</button>
+                                <div class="info">
+                                    <p>WEBSITE</p>
+                                    <h3>MIK Studio</h3>
+                                </div>
+
+                                <div class="icons">
+                                    <i class="ri-arrow-right-up-line"></i>
+                                    <i class="ri-bookmark-line"></i>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="item__data">
+                            <h3>MIk Studio</h3>
+                            <div class="creator">
+                                <p>by</p>
+                                <img src="./img/creator-1.png" alt="">
+                                <h3>mikstudio</h3>
+                                <p>Pro</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="swiper-button-next">
+                    <i class="ri-arrow-right-s-line"></i>
+                </div>
+                <div class="swiper-button-prev">
+                    <i class="ri-arrow-left-s-line"></i>
+                </div>
+            </div>
+
+            <div class="link">
+                <p>Check out all submitted websites <i class="ri-arrow-right-line"></i></p>
+                <div class="creator">
+                    <h3>View Nominees</h3>
+                </div>
+            </div>
+        </section>
+
     </main>
+
+    <!--!============= SWIPER JS LINK ============-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.0.4/swiper-bundle.min.js"
+        integrity="sha512-0N/5ZOjfsh3niel+5dRD40HQkFOWaxoVzqMVAHnmAO2DC3nY/TFB7OYTaPRAFJ571IRS/XRsXGb2XyiFLFeu1g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 </body>
 
