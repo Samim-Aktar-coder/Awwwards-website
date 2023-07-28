@@ -34,9 +34,19 @@
         --h1-font-size: 4rem;
         --h2-font-size: 1.8rem;
         --h3-font-size: 1.3rem;
+        --h4-font-size: 1.1rem;
         --normal-font-size: .9rem;
         --small-font-size: .8rem;
         --smaller-font-size: .7rem;
+    }
+}
+
+@media screen and (max-width:400px) {
+    :root {
+        --h1-font-size: 3rem;
+        --h2-font-size: 1.6rem;
+        --h3-font-size: 1.2rem;
+        --h4-font-size: 1.05rem;
     }
 }
 
@@ -189,6 +199,7 @@ header {
     opacity: 0;
     pointer-events: none;
     transition: .3s;
+    z-index: 55;
 }
 
 .search-bar.show .search-modal {
@@ -232,6 +243,7 @@ header {
     display: flex;
     align-items: center;
     gap: 1rem;
+    flex-wrap: wrap;
 }
 
 .tags__content h4 {
@@ -275,6 +287,7 @@ header {
     padding: 1rem .8rem;
     opacity: 0;
     pointer-events: none;
+    z-index: 99;
 }
 
 .inspiration.show .inspiration-modal {
@@ -803,13 +816,15 @@ header {
     transform: scaleY(1.1);
     text-align: center;
     position: relative;
+    width: max-content;
+    margin-inline: auto;
 }
 
 .nominees .heading::after {
     content: 'Cool Sites !';
     position: absolute;
     bottom: -1rem;
-    right: 27%;
+    right: -2rem;
     font-size: var(--normal-font-size);
     font-weight: var(--font-bold);
     background-color: #fed11b;
@@ -971,6 +986,7 @@ header {
     align-items: center;
     justify-content: center;
     gap: .5rem;
+    flex-wrap: wrap;
 }
 
 .nominees .link {
@@ -979,6 +995,18 @@ header {
 
 .nominees .link p {
     font-size: var(--h4-font-size);
+}
+
+/*!============= MARKET ============ */
+.market .title{
+    font-size: var(--small-font-size);
+    font-weight: var(--font-light);
+    margin-bottom: 1rem;
+}
+
+.market .heading{
+    font-size: var(--h2-font-size);
+    font-weight: var(--font-bold);
 }
 
 /*!============= Responsiveness ============ */
@@ -1060,6 +1088,15 @@ header {
 }
 
 @media screen and (max-width:770px) {
+
+    .projects {
+        display: none;
+    }
+
+    .tags {
+        margin-top: 0;
+    }
+
     .fixed-nav {
         width: 90%;
     }
@@ -1088,6 +1125,13 @@ header {
         flex-direction: column;
         align-items: flex-start;
         gap: 1rem;
+    }
+
+    .nominees .heading::after {
+        bottom: unset;
+        right: unset;
+        top: -1rem;
+        left: -1rem;
     }
 }
 
@@ -1220,6 +1264,18 @@ header {
 
     .score .point p {
         font-size: 1.3rem;
+    }
+
+    .nominees .heading::after {
+        padding: .7rem 1rem;
+    }
+
+    .swiper-button-next {
+        right: 35%;
+    }
+
+    .swiper-button-prev {
+        left: 35%;
     }
 }
 
