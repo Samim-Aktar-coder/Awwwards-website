@@ -1,4 +1,4 @@
-//!============ Show Search Modal ============
+//!============ Show Search Modal ============;
 let searchBar = document.querySelector('.search-bar');
 
 
@@ -47,11 +47,6 @@ fixedNav.addEventListener('mouseleave', () => {
 
 
 
-
-document.body.addEventListener('click', () => {
-    console.log('click');
-});
-
 //!============= SWIPER JS ========
 let nomineesSwiper = new Swiper(".nominees__content", {
     spaceBetween: 30,
@@ -82,5 +77,40 @@ let directorySwiper = new Swiper(".directory-slider", {
         el: ".swiper-pagination",
         clickable: true,
     },
-    grabCursor:true
+    grabCursor: true
+});
+
+//!=============== PLAY VIDEO ON SCROLL ============
+let mainVideoContainer = document.querySelector('.main-video');
+
+
+window.addEventListener('scroll', () => {
+    let pageY = window.scrollY;
+    let video = mainVideoContainer.querySelector('video');
+    let mainVideoContainerTop = mainVideoContainer.offsetTop - 400;
+    let mainVideoContainerHeight = mainVideoContainer.offsetHeight + 200;
+
+    if (pageY > mainVideoContainerTop && pageY <= mainVideoContainerTop + mainVideoContainerHeight) {
+        video.play();
+    } else {
+        video.pause();
+    }
+});
+
+let hoverVideo = document.querySelectorAll('.hover-video');
+
+function pauseHoverVideo(e) {
+    if (!e.target.classList.contains('layer')) {
+        hoverVideo.forEach(video => {
+            video.pause();
+        });
+    }
+}
+
+window.addEventListener('mousemove', (e) => {
+    if (e.target.classList.contains('hover-video')) {
+        e.target.play();
+    } else {
+        pauseHoverVideo(e);
+    }
 });
