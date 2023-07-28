@@ -46,7 +46,7 @@
         --h1-font-size: 3rem;
         --h2-font-size: 1.6rem;
         --h3-font-size: 1.2rem;
-        --h4-font-size: 1.05rem;
+        --h4-font-size: 1rem;
     }
 }
 
@@ -392,7 +392,7 @@ header {
     width: 40%;
     transition: width .6s;
     z-index: 99;
-    display: none;
+    /* display: none; */
 }
 
 .main-home {
