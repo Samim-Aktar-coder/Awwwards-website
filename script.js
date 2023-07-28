@@ -53,7 +53,7 @@ document.body.addEventListener('click', () => {
 });
 
 //!============= SWIPER JS ========
-let swiper = new Swiper(".nominees__content", {
+let nomineesSwiper = new Swiper(".nominees__content", {
     spaceBetween: 30,
     navigation: {
         nextEl: ".swiper-button-next",
@@ -73,4 +73,14 @@ let swiper = new Swiper(".nominees__content", {
             spaceBetween: 40,
         }
     }
+});
+
+let directorySwiper = new Swiper(".directory-slider", {
+    spaceBetween: 30,
+    effect: "fade",
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    grabCursor:true
 });

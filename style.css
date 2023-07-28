@@ -108,7 +108,6 @@ input {
 
 .section {
     padding: 6rem 3rem;
-    /* width: 100%; */
 }
 
 .flex {
@@ -1243,18 +1242,208 @@ header {
     height: 6rem;
 }
 
-.directory .subtitle{
+.directory .subtitle {
     font-size: var(--h3-font-size);
     font-weight: var(--font-light);
     text-align: center;
     margin-top: 1rem;
 }
 
+.directory__content {
+    margin-top: 3rem;
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+.directory-item {
+    flex: 1;
+    width: 100%;
+    background-color: var(--black-color);
+    color: white;
+    padding: 2.5rem 1.5rem;
+    border-radius: .6rem;
+}
+
+.directory-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.directory-header .badge {
+    width: 4rem;
+    height: 4rem;
+    background-color: var(--light-black-color);
+    border-radius: 50%;
+    font-size: .7rem;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+}
+
+.directory-header .directory-slider-container {
+    flex-basis: 50%;
+    width: 12rem;
+}
+
+.directory-slider {
+    width: 100%;
+}
+
+.slider-img {
+    width: 100%;
+    height: 100%;
+    border-radius: .5rem;
+    overflow: hidden;
+}
+
+.directory .swiper {
+    padding-bottom: 3rem;
+}
+
+.directory .swiper-pagination-bullets {
+    width: max-content;
+    right: 0;
+    left: unset;
+}
+
+
+.swiper-pagination-bullet {
+    background-color: #ccc;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: white;
+}
+
+.directory-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-block: 2.5rem 2rem;
+}
+
+.directory-title .title p {
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-light);
+    text-align: left;
+}
+
+.directory-title .title h2 {
+    font-size: var(--h2-font-size);
+    cursor: pointer;
+    font-weight: var(--font-bold);
+    text-align: left;
+}
+
+.directory-title .works {
+    border: 1px solid var(--dull-black-color);
+    text-align: center;
+    padding: .5rem .7rem;
+    border-radius: .8rem;
+}
+
+.directory-title .works p {
+    font-size: var(--smaller-font-size);
+    font-weight: var(--font-light);
+}
+
+.directory-title h3 {
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-bold);
+}
+
+.directory .info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.directory .info p:first-child {
+    cursor: pointer;
+}
+
+.directory-table-container::-webkit-scrollbar {
+    display: none;
+}
+
+.directory-table {
+    /* border: 1px solid red; */
+    width: 100%;
+    margin-top: 3rem;
+    border-collapse: collapse;
+    overflow: scroll;
+}
+
+thead th,
+tbody td {
+    border-bottom: 1px dotted #b0b0b0;
+    padding: 0 1rem;
+}
+
+thead th {
+    height: 3rem;
+}
+
+tbody td {
+    height: 6.5rem;
+}
+
+.directory-table thead th {
+    font-size: var(--small-font-size);
+    font-weight: var(--font-light);
+}
+
+
+.directory-table tbody tr:hover {
+    background-color: #eaeaea;
+}
+
+.directory-table tbody td {
+    font-size: var(--h4-font-size);
+}
+
+.directory-table .logo {
+    align-items: center;
+    gap: .5rem;
+}
+
+.directory-table .logo img {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+}
+
+.directory-table .creator h3 {
+    font-size: var(--h4-font-size);
+}
+
+.directory-table .creator p {
+    font-size: var(--smaller-font-size);
+}
+
+.directory-table .table-btn {
+    border: 1px solid black;
+    padding: .7rem 1.5rem;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+.directory-table .table-btn:hover {
+    background-color: var(--black-color);
+    color: white;
+}
+
+.directory .more-link {
+    margin-top: 5rem;
+}
+
 /*!============= Responsiveness ============ */
 @media screen and (max-width:1550px) {
 
     .market__content .market-item:nth-child(4),
-    .academy__content .academy-item:nth-child(4) {
+    .academy__content .academy-item:nth-child(4),
+    .directory__content .directory-item:nth-child(3) {
         display: none;
     }
 }
@@ -1391,6 +1580,10 @@ header {
         top: -1rem;
         left: -1rem;
     }
+
+    .directory__content {
+        flex-direction: column;
+    }
 }
 
 @media screen and (max-width:650px) {
@@ -1408,6 +1601,16 @@ header {
     .market-item .subtitle,
     .market-item button {
         padding: 1.3rem 1rem;
+    }
+
+    .directory-table-container::-webkit-scrollbar {
+        display: block;
+        height: 3px;
+    }
+
+    .directory-table-container::-webkit-scrollbar-thumb {
+        background-color: #afafaf;
+        border-radius: 3rem;
     }
 }
 
