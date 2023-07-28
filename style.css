@@ -393,7 +393,7 @@ header {
     width: 40%;
     transition: width .6s;
     z-index: 99;
-    display: none;
+    /* display: none; */
 }
 
 .main-home {
