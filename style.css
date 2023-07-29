@@ -30,6 +30,7 @@
 }
 
 @media screen and (max-width:800px) {
+
     :root {
         --h1-font-size: 4.5rem;
         --h2-font-size: 1.8rem;
@@ -41,12 +42,20 @@
     }
 }
 
-@media screen and (max-width:400px) {
+@media screen and (max-width:480px) {
+
     :root {
         --h1-font-size: 3rem;
         --h2-font-size: 1.6rem;
         --h3-font-size: 1.2rem;
         --h4-font-size: 1rem;
+    }
+}
+
+@media screen and (max-width:350px) {
+
+    :root {
+        --h1-font-size: 2.3rem;
     }
 }
 
@@ -61,20 +70,16 @@
     transition: all .3s;
 }
 
+
+
 body {
     background-color: var(--body-color);
-    overflow-x: hidden !important;
+    overflow-x: hidden;
 }
 
-html,
-body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
+html {
     scroll-behavior: smooth;
 }
-
 
 ul {
     list-style: none;
@@ -550,7 +555,7 @@ header {
 /*!============== H0ME ===============*/
 .home {
     background-color: var(--hero-color);
-    padding-top: 0;
+    padding-top: 0 !important;
 }
 
 .home .heading {
@@ -1633,6 +1638,7 @@ tbody td {
 }
 
 @media screen and (max-width:1360px) {
+
     .home .heading {
         --large-font-size: 7rem;
         word-spacing: 0;
@@ -1650,6 +1656,7 @@ tbody td {
 }
 
 @media screen and (max-width:1340px) {
+
     .fixed-nav {
         width: 50%;
     }
@@ -1671,6 +1678,7 @@ tbody td {
 }
 
 @media screen and (max-width:1100px) {
+
     .fixed-nav {
         width: 60%;
     }
@@ -1694,6 +1702,7 @@ tbody td {
 }
 
 @media screen and (max-width:900px) {
+
     .section {
         padding-block: 5rem;
     }
@@ -1765,7 +1774,7 @@ tbody td {
     .nominees .heading::after {
         bottom: unset;
         right: unset;
-        top: -1rem;
+        top: -2rem;
         left: -1rem;
     }
 
@@ -1807,6 +1816,7 @@ tbody td {
 }
 
 @media screen and (max-width:610px) {
+
     .padding-inline {
         padding-inline: 1rem;
     }
@@ -1890,7 +1900,27 @@ tbody td {
     }
 }
 
+@media screen and (max-width:550px) {
+    .directory .heading img {
+        bottom: unset;
+        right: unset;
+        top: -1.5rem;
+        left: -2rem;
+        width: 5rem;
+        height: 5rem;
+    }
+}
+
 @media screen and (max-width:470px) {
+
+    .fixed-nav {
+        width: 40%;
+    }
+
+    .fixed-nav.active {
+        width: 95%;
+    }
+
     .search__container {
         flex-basis: 90%;
     }
@@ -1937,8 +1967,13 @@ tbody td {
         font-size: 1.3rem;
     }
 
+
     .nominees .heading::after {
-        padding: .7rem 1rem;
+        padding: .4rem .7rem;
+        font-size: var(--small-font-size);
+        top: -1rem;
+        left: -1rem;
+        border-radius: .3rem;
     }
 
     .swiper-button-next {
@@ -1952,9 +1987,23 @@ tbody td {
     .inspirational__content {
         padding: 4rem 2rem;
     }
+
+    .directory .heading img {
+        bottom: unset;
+        right: unset;
+        top: -.5rem;
+        left: -1rem;
+        width: 3rem;
+        height: 3rem;
+    }
 }
 
 @media screen and (max-width:380px) {
+
+    .fixed-nav {
+        width: 50%;
+    }
+
     .search__container {
         flex-basis: 70%;
     }
