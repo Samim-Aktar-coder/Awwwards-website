@@ -2241,9 +2241,16 @@ tbody td {
     .form__content .close-form {
         position: absolute;
         bottom: unset;
-        right: -.3rem;
-        top: -.3rem;
+        right: 0rem;
+        top: 0rem;
         border-radius: 0;
+        width: 3.8rem;
+        height: 3.8rem;
+        border-bottom-left-radius: .6rem;
+    }
+
+    .form__content .close-form i {
+        font-size: 2rem;
     }
 }
 
