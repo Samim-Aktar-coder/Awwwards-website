@@ -2563,6 +2563,14 @@ tbody td {
     .form__left .img-box img:last-child {
         width: 7rem;
     }
+
+    .password-box {
+        flex-direction: column;
+        width: 100%;
+    }
+    .password-box .input__control{
+        width: 100%;
+    }
 }
 
 @media screen and (max-width:550px) {
