@@ -2469,6 +2469,10 @@ tbody td {
         width: 80%;
     }
 
+    .main__menu-modal {
+        min-height: 25rem;
+    }
+
     .main__menu-content {
         flex-direction: column;
         overflow-y: scroll;
