@@ -1741,15 +1741,16 @@ tbody td {
 
 /*!=============== CARDS ============ */
 .cards__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 35rem;
     gap: 2rem;
 }
 
 .card-item {
-    height: 35rem;
     border-radius: .8rem;
     overflow: hidden;
     position: relative;
-    flex: 1;
     width: 100%;
 }
 
@@ -1971,15 +1972,17 @@ tbody td {
     }
 
     .cards__content {
-        flex-direction: column;
-    }
-
-    .card-item {
-        max-height: 25rem;
+        grid-template-columns: 1fr;
+        grid-template-rows: min-content min-content;
     }
 
     .card-item .info h2 {
         width: 100%;
+    }
+
+    .card-item .info .faq {
+        position: static;
+        margin-top: 5rem;
     }
 
     .footer__content {
@@ -2085,6 +2088,8 @@ tbody td {
     .directory__content {
         flex-direction: column;
     }
+
+
 }
 
 @media screen and (max-width:650px) {
@@ -2116,6 +2121,10 @@ tbody td {
 
     .inspirational__content {
         padding: 4rem;
+    }
+
+    .card-item .info {
+        padding: 2rem;
     }
 }
 
@@ -2202,6 +2211,14 @@ tbody td {
         right: unset;
         left: 40%;
     }
+
+    .card-item .info h2 {
+        margin-block: 1.5rem;
+    }
+
+    .card-item .info .faq {
+        margin-top: 2.5rem;
+    }
 }
 
 @media screen and (max-width:550px) {
@@ -2213,6 +2230,12 @@ tbody td {
         width: 5rem;
         height: 5rem;
     }
+
+
+    .cards__content {
+        grid-template-rows: 23rem 23rem;
+    }
+
 }
 
 @media screen and (max-width:470px) {
