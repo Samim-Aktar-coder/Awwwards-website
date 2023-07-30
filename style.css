@@ -2143,9 +2143,9 @@ tbody td {
     width: 3.5rem;
     height: 3.5rem;
     border-radius: .4rem;
-    position: absolute;
-    bottom: 1rem;
-    right: -5rem;
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
     background-color: var(--black-color);
     color: white;
     font-size: 1.8rem;
@@ -2226,6 +2226,10 @@ tbody td {
     .nav__btns-box {
         display: none;
     }
+
+    .form__content .close-form {
+        right: 1rem;
+    }
 }
 
 @media screen and (max-width:1150px) {
@@ -2235,6 +2239,7 @@ tbody td {
     }
 
     .form__content .close-form {
+        position: absolute;
         bottom: unset;
         right: -.3rem;
         top: -.3rem;
