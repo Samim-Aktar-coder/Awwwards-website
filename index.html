@@ -21,6 +21,24 @@
     <!--!=========== NAVBAR ===========-->
     <header class="padding-inline">
         <nav class="fixed-nav flex">
+
+            <div class="main-home">
+                <div class="logo">
+                    <img src="./img/awwwards-icon-white.svg" alt="">
+                    <p>home</p>
+                </div>
+                <i class="ri-menu-line menu-toggle"></i>
+            </div>
+
+            <ul class="fixed__nav-list">
+                <li><a href="#" class="link">Home</a></li>
+                <li><a href="#sotd" class="link active">SOTD</a></li>
+                <li><a href="#nominees" class="link">Nominees</a></li>
+                <li><a href="#directory" class="link">Directory</a></li>
+                <li><a href="#collections" class="link">Collections</a></li>
+            </ul>
+
+
             <div class="main__menu-modal">
                 <div class="main__menu-content">
                     <div class="menu-item awwards">
@@ -38,7 +56,7 @@
                         <p>Courses</p>
                         <p>Masterclasses</p>
                     </div>
-                    <div class="menu-item directory">
+                    <div class="menu-item Collections">
                         <h5>Directory</h5>
                         <p>Professionals</p>
                         <p>Internationals</p>
@@ -55,22 +73,7 @@
                     </div>
                 </div>
             </div>
-
-            <div class="main-home">
-                <div class="logo">
-                    <img src="./img/awwwards-icon-white.svg" alt="">
-                    <p>home</p>
-                </div>
-                <i class="ri-menu-line menu-toggle"></i>
-            </div>
-
-            <ul class="fixed__nav-list">
-                <li><a href="#" class="link">Home</a></li>
-                <li><a href="#sotd" class="link active">SOTD</a></li>
-                <li><a href="#nominees" class="link">Nominees</a></li>
-                <li><a href="#directory" class="link">Directory</a></li>
-                <li><a href="#collections" class="link">Collections</a></li>
-            </ul>
+            
         </nav>
     </header>
 
@@ -1032,16 +1035,322 @@
             <h5 class="title">Collections</h5>
             <h2 class="heading">Explore a wide <br> variety of collections.</h2>
 
-            <!-- <div class="collection__content">
-                <div class="collection-item">
-                    <div class="collection-img">
-                        <video src="./img/video-5.mp4" type="mp4" loop muted class="hover-video"></video>
+            <div class="collection__content flex swiper">
+                <div class="swiper-wrapper">
+
+                    <div class="collection-item swiper-slide">
+                        <div class="collection-img">
+                            <video src="./img/video-5.mp4" type="mp4" loop muted class="hover-video"></video>
+                            <div class="layer">
+                                <div class="info">
+                                    <p>COLLECTION</p>
+                                    <h4>UX/UI</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item-data flex">
+                            <h4>Menu Insipiration</h4>
+                            <div class="follower">
+                                <span>followed by</span>
+                                <div class="user-box">
+                                    <img src="./img/collection-user-1.jpg" class="first-img">
+                                    <img src="./img/collection-user-2.jpg">
+                                    <img src="./img/collection-user-3.jpg">
+                                </div>
+                                <p>+2165</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="collection-item swiper-slide">
+                        <div class="collection-img">
+                            <img src="./img/collection-1.jpg">
+                            <div class="layer">
+                                <div class="info">
+                                    <p>COLLECTION</p>
+                                    <h4>UX/UI</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item-data flex">
+                            <h4>The Best of Navigation</h4>
+                            <div class="follower">
+                                <span>followed by</span>
+                                <div class="user-box">
+                                    <img src="./img/collection-user-1.jpg" class="first-img">
+                                    <img src="./img/collection-user-2.jpg">
+                                    <img src="./img/collection-user-3.jpg">
+                                </div>
+                                <p>+1908</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="collection-item swiper-slide">
+                        <div class="collection-img">
+                            <img src="./img/collection-2.jpg">
+                            <div class="layer">
+                                <div class="info">
+                                    <p>COLLECTION</p>
+                                    <h4>UX/UI</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item-data flex">
+                            <h4>Transitions</h4>
+                            <div class="follower">
+                                <span>followed by</span>
+                                <div class="user-box">
+                                    <img src="./img/collection-user-5.jpg" class="first-img">
+                                    <img src="./img/collection-user-2.jpg">
+                                    <img src="./img/collection-user-7.jpg">
+                                </div>
+                                <p>+1748</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="collection-item swiper-slide">
+                        <div class="collection-img">
+                            <img src="./img/collection-3.jpg">
+                            <div class="layer">
+                                <div class="info">
+                                    <p>COLLECTION</p>
+                                    <h4>UX/UI</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item-data flex">
+                            <h4>Loading Animation</h4>
+                            <div class="follower">
+                                <span>followed by</span>
+                                <div class="user-box">
+                                    <img src="./img/collection-user-4.png" class="first-img">
+                                    <img src="./img/collection-user-3.jpg">
+                                    <img src="./img/collection-user-7.jpg">
+                                </div>
+                                <p>+1279</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="collection-item swiper-slide">
+                        <div class="collection-img">
+                            <img src="./img/collection-4.jpg">
+                            <div class="layer">
+                                <div class="info">
+                                    <p>COLLECTION</p>
+                                    <h4>Inspiration</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item-data flex">
+                            <h4>Galleries and SlideShows</h4>
+                            <div class="follower">
+                                <span>followed by</span>
+                                <div class="user-box">
+                                    <img src="./img/collection-user-6.jpg" class="first-img">
+                                    <img src="./img/collection-user-2.jpg">
+                                    <img src="./img/collection-user-5.jpg">
+                                </div>
+                                <p>+1194</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="collection-item swiper-slide">
+                        <div class="collection-img">
+                            <img src="./img/collection-5.jpg">
+                            <div class="layer">
+                                <div class="info">
+                                    <p>COLLECTION</p>
+                                    <h4>UX/UI</h4>
+                                </div>
+                            </div>
+
+                            <div class="item-data flex">
+                                <h4>Hover, Cursor and Cute In...</h4>
+                                <div class="follower">
+                                    <span>followed by</span>
+                                    <div class="user-box">
+                                        <img src="./img/collection-user-7.jpg" class="first-img">
+                                        <img src="./img/collection-user-3.jpg">
+                                        <img src="./img/collection-user-6.jpg">
+                                    </div>
+                                    <p>+1262</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="collection-item swiper-slide">
+                        <div class="collection-img">
+                            <img src="./img/collection-6.jpg">
+                            <div class="layer">
+                                <div class="info">
+                                    <p>COLLECTION</p>
+                                    <h4>UX/UI</h4>
+                                </div>
+                            </div>
+
+                            <div class="item-data flex">
+                                <h4>Footer Design Best Practices</h4>
+                                <div class="follower">
+                                    <span>followed by</span>
+                                    <div class="user-box">
+                                        <img src="./img/collection-user-1.jpg" class="first-img">
+                                        <img src="./img/collection-user-7.jpg">
+                                        <img src="./img/collection-user-2.jpg">
+                                    </div>
+                                    <p>+1160</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="collection-item swiper-slide">
+                        <div class="collection-img">
+                            <video src="./img/video-6.mp4" type="mp4" loop muted class="hover-video"></video>
+                            <div class="layer">
+                                <div class="info">
+                                    <p>COLLECTION</p>
+                                    <h4>Web Technology</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item-data flex">
+                            <h4>CSS & JS Animations</h4>
+                            <div class="follower">
+                                <span>followed by</span>
+                                <div class="user-box">
+                                    <img src="./img/collection-user-7.jpg" class="first-img">
+                                    <img src="./img/collection-user-4.png">
+                                    <img src="./img/collection-user-8.png">
+                                </div>
+                                <p>+1011</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div> -->
+
+                <div class="swiper-button-next">
+                    <i class="ri-arrow-right-s-line"></i>
+                </div>
+                <div class="swiper-button-prev">
+                    <i class="ri-arrow-left-s-line"></i>
+                </div>
+
+            </div>
+
+            <div class="more-link">
+                <p>Find inspiration for your projects<i class="ri-arrow-right-line"></i>
+                </p>
+                <div class="creator">
+                    <h3>View Collections</h3>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!--!========== CARD ===========-->
+        <section class="cards section">
+            <div class="cards__content flex">
+
+                <div class="card-item">
+                    <img src="./img/card-img-1.jpg">
+                    <div class="info">
+                        <p>Share your Work</p>
+                        <h2>Submit your website for visibility and recognition</h2>
+                        <div class="card-btn">Submit Webiste</div>
+                        <div class="faq">Got questions? Read our
+                            <div class="creator">
+                                <h3>FAQs</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-item">
+                    <img src="./img/card-img-2.jpg">
+                    <div class="info">
+                        <p>Be a Member</p>
+                        <h2>Get access to special pro features</h2>
+                        <div class="card-btn">Be Pro</div>
+                        <div class="faq">Got questions? Read our
+                            <div class="creator">
+                                <h3>FAQs</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
     </main>
+
+
+    <!--!========== FOOTER ===========-->
+
+    <div class="footer footer section">
+        <div class="footer__logo">
+            <img src="./img/awwwards-icon-black.svg">
+        </div>
+
+
+        <div class="footer__content">
+            <div class="footer__links">
+                <a href="#">Websites</a>
+                <a href="#">Collections</a>
+            </div>
+            <div class="footer__links">
+                <a href="#">Academy</a>
+                <a href="#">Jobs</a>
+            </div>
+            <div class="footer__links">
+                <a href="#">Directory</a>
+                <a href="#">Conferences</a>
+            </div>
+            <div class="footer__links">
+                <a href="#">FAQs</a>
+                <a href="#">About Us</a>
+                <a href="#">Contact Us</a>
+            </div>
+
+            <div class="footer__box">
+                <p>Next Conference</p>
+                <i class="ri-calendar-2-line"></i>
+                <div class="creator">
+                    <h3>Amsterdam</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer__main">
+            <div class="footer__policy">
+                <a href="#">Cookies Policy</a>
+                <a href="#">Legal Terms</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+            <div class="footer__socials">
+                <p>Connect:</p>
+                <a href="#">Instagram</a>
+                <a href="#">LinkedIn</a>
+                <a href="#">Twitter</a>
+                <a href="#">Facebook</a>
+                <a href="#">YouTube</a>
+                <a href="#">TikTok</a>
+                <a href="#">Pinterest</a>
+            </div>
+        </div>
+    </div>
 
     <!--!============= SWIPER JS LINK ============-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.0.4/swiper-bundle.min.js"

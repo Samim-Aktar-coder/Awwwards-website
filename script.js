@@ -70,6 +70,7 @@ let nomineesSwiper = new Swiper(".nominees__content", {
     }
 });
 
+
 let directorySwiper = new Swiper(".directory-slider", {
     spaceBetween: 30,
     effect: "fade",
@@ -80,6 +81,28 @@ let directorySwiper = new Swiper(".directory-slider", {
     grabCursor: true
 });
 
+let collectionsSwiper = new Swiper(".collection__content", {
+    spaceBetween: 20,
+    grabCursor: true,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+        },
+        610: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+        },
+        1100: {
+            slidesPerView: 3,
+            spaceBetween: 40,
+        }
+    }
+});
 //!=============== PLAY VIDEO ON SCROLL ============
 let mainVideoContainer = document.querySelector('.main-video');
 
@@ -114,3 +137,6 @@ window.addEventListener('mousemove', (e) => {
         pauseHoverVideo(e);
     }
 });
+
+//!============= ACTIVE LINK ON SCROLL ==========
+let 
