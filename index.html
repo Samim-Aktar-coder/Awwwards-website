@@ -934,7 +934,7 @@
                 <h1 class="heading">ELEMENT OF <br> THE DAY</h1>
 
                 <div class="main-video">
-                    <video src="./img/main-video.mp4" type="mp4" loop muted></video>
+                    <video src="./img/main-video.mp4" type="mp4" loop muted class="hover-video"></video>
                     <div class="badge">video</div>
                     <div class="layer">
                         <div class="info">
@@ -1296,6 +1296,171 @@
 
     </main>
 
+    <!--!============== SIGNUP FORM ============-->
+    <div class="form-modal signup-modal">
+        <div class="form__content">
+
+
+            <div class="form__left">
+                <h3>Welcome!</h3>
+                <div class="img-box">
+                    <img src="./img/awwwards-icon-black.svg">
+                    <img src="./img/smile-img.png">
+                </div>
+                <div class="more-link">
+                    <p>Are you a member?</p>
+                    <div class="creator">
+                        <h3 class="login-btn">Log in now</h3>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="form__right">
+                <h3>Register with your e-mail</h3>
+
+                <form action="#">
+
+                    <div class="input__control">
+                        <label for="signup-username">USERNAME (*)</label>
+                        <input type="text" id="signup-username" placeholder="Username">
+                    </div>
+
+                    <div class="input__control">
+                        <label for="signup-email">EMAIL (*)</label>
+                        <input type="email" id="signup-email" placeholder="E-mail">
+                    </div>
+
+                    <div class="password-box">
+                        <div class="input__control">
+                            <label for="password">PASSWORD (*)</label>
+                            <input type="password" id="password" placeholder="Password">
+                        </div>
+
+                        <div class="input__control">
+                            <label for="rpassword">REPEAT PASSWORD (*)</label>
+                            <input type="password" id="rpassword" placeholder="Repeat Password">
+                        </div>
+                    </div>
+
+                    <p>Awwwards may keep me informed with personalized emails about products and services. See our
+                        <span>Privacy Policy</span> for more
+                        details.
+                    </p>
+
+                    <div class="input__check">
+                        <input type="checkbox" id="contact">
+                        <label for="contact">Please contact me via e-mail</label>
+                    </div>
+
+                    <div class="input__check">
+                        <input type="checkbox" id="terms">
+                        <label for="terms">I have read and accept the Terms and Conditions</label>
+                    </div>
+
+
+                    <p class="captcha">This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of
+                        Service apply.</p>
+
+                    <button type="submit" class="form-btn">Create Account</button>
+
+                    <p class="register">Or register with</p>
+
+                    <div class="options">
+                        <div class="option">
+                            <i class="ri-google-fill"></i>
+                            Google
+                        </div>
+                        <div class="option">
+                            <i class="ri-twitter-fill"></i>
+                            Twitter
+                        </div>
+                        <div class="option">
+                            <i class="ri-facebook-fill"></i>
+                            Facebook
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+
+            <button class="close-form"><i class="ri-close-line"></i></button>
+
+        </div>
+    </div>
+
+
+    <!--!============== LOGIN FORM ============-->
+    <div class="form-modal login-modal">
+        <div class="form__content">
+
+
+            <div class="form__left">
+                <h3>Welcome!</h3>
+                <div class="img-box">
+                    <img src="./img/awwwards-icon-black.svg">
+                    <img src="./img/smile-img.png">
+                </div>
+                <div class="more-link">
+                    <p>Not a member yet?</p>
+                    <div class="creator">
+                        <h3 class="sign-btn">Register now</h3>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="form__right">
+                <h3>Log in</h3>
+
+                <form action="#">
+
+                    <div class="input__control">
+                        <label for="login-username">EMAIL OR USERNAME</label>
+                        <input type="text" id="login-username" placeholder="Username">
+                    </div>
+
+                    <div class="input__control">
+                        <label for="login-password">PASSWORD (*)</label>
+                        <input type="password" id="login-password" placeholder="Password">
+                    </div>
+
+                    <div class="input__check">
+                        <input type="checkbox" id="login">
+                        <label for="login">Keep me logged in</label>
+                    </div>
+
+                    <button type="submit" class="form-btn">Log in now</button>
+
+                    <div class="creator">
+                        <h3>Forgot your password?</h3>
+                    </div>
+
+                    <p class="register">Or register with</p>
+
+                    <div class="options">
+                        <div class="option">
+                            <i class="ri-google-fill"></i>
+                            Google
+                        </div>
+                        <div class="option">
+                            <i class="ri-twitter-fill"></i>
+                            Twitter
+                        </div>
+                        <div class="option">
+                            <i class="ri-facebook-fill"></i>
+                            Facebook
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+
+            <button class="close-form"><i class="ri-close-line"></i></button>
+
+        </div>
+    </div>
+
 
     <!--!========== FOOTER ===========-->
 
@@ -1351,6 +1516,11 @@
             </div>
         </div>
     </div>
+
+    <!--!=========== BACK TO HOME ===========-->
+    <a href="#sotd" class="back-to-home">
+        <i class="ri-arrow-up-line"></i>
+    </a>
 
     <!--!============= SWIPER JS LINK ============-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.0.4/swiper-bundle.min.js"

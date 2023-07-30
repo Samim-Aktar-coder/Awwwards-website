@@ -104,22 +104,6 @@ let collectionsSwiper = new Swiper(".collection__content", {
     }
 });
 //!=============== PLAY VIDEO ON SCROLL ============
-let mainVideoContainer = document.querySelector('.main-video');
-
-
-window.addEventListener('scroll', () => {
-    let pageY = window.scrollY;
-    let video = mainVideoContainer.querySelector('video');
-    let mainVideoContainerTop = mainVideoContainer.offsetTop - 400;
-    let mainVideoContainerHeight = mainVideoContainer.offsetHeight + 200;
-
-    if (pageY > mainVideoContainerTop && pageY <= mainVideoContainerTop + mainVideoContainerHeight) {
-        video.play();
-    } else {
-        video.pause();
-    }
-});
-
 let hoverVideo = document.querySelectorAll('.hover-video');
 
 function pauseHoverVideo(e) {
@@ -139,4 +123,82 @@ window.addEventListener('mousemove', (e) => {
 });
 
 //!============= ACTIVE LINK ON SCROLL ==========
-// let 
+let navLinks = document.querySelectorAll('.fixed__nav-list .link');
+let sections = document.querySelectorAll('section[id]');
+
+function scrollActive() {
+    let pageY = window.scrollY;
+    sections.forEach(section => {
+        let id = section.getAttribute('id');
+        let sectionTop = section.offsetTop - 100;
+        let sectionHeight = section.offsetHeight;
+        let currentLink = document.querySelector('.fixed__nav-list a[href*= ' + id + ']');
+
+        if (pageY > sectionTop && pageY <= sectionTop + sectionHeight) {
+            currentLink.classList.add('active');
+        } else {
+            currentLink.classList.remove('active');
+        }
+    });
+}
+
+window.addEventListener('scroll', scrollActive);
+
+
+//!============= SHOW BACK TO HOME ==========
+let backToHome = document.querySelector('.back-to-home');
+
+window.addEventListener('scroll', () => {
+    let pageY = window.scrollY;
+    if (pageY > 400) {
+        backToHome.classList.add('show');
+    } else {
+        backToHome.classList.remove('show');
+    }
+});
+
+
+//!============== TOGGLE FORM ==============
+let loginBtn = document.querySelector('.login-btn');
+let signUpBtn = document.querySelector('.sign-btn');
+let signUpIcon = document.querySelector('.signup-toggle');
+let loginForm = document.querySelector('.login-modal');
+let sinUpForm = document.querySelector('.signup-modal');
+let closeLoginForm = loginForm.querySelector('.close-form');
+let closeSignUpForm = sinUpForm.querySelector('.close-form');
+
+
+let loginToSignUpBtn = loginForm.querySelector('.sign-btn');
+let signUpToLogin = sinUpForm.querySelector('.login-btn');
+
+
+function eventListener(btn, form) {
+    btn.addEventListener('click', () => {
+        form.classList.toggle('show');
+        document.body.classList.toggle('active-form');
+    });
+}
+
+eventListener(loginBtn, loginForm);
+eventListener(signUpBtn, sinUpForm);
+eventListener(closeSignUpForm, sinUpForm);
+eventListener(closeLoginForm, loginForm);
+eventListener(signUpIcon, loginForm);
+
+loginToSignUpBtn.addEventListener('click', () => {
+    loginForm.classList.remove('show');
+    sinUpForm.classList.add('show');
+});
+signUpToLogin.addEventListener('click', () => {
+    loginForm.classList.add('show');
+    sinUpForm.classList.remove('show');
+});
+
+
+document.addEventListener('click', (e) => {
+    if (e.target.classList.contains('form-modal')) {
+        sinUpForm.classList.remove('show');
+        loginForm.classList.remove('show');
+        document.body.classList.remove('active-form');
+    }
+});
