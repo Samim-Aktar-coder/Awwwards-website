@@ -2624,6 +2624,7 @@ tbody td {
 
     .home .heading {
         --large-font-size: 2.5rem;
+        margin-top: 1.5rem;
     }
 
     .home__img {
@@ -2676,6 +2677,27 @@ tbody td {
         left: -1rem;
         width: 3rem;
         height: 3rem;
+    }
+
+    .inspirational .heading {
+        line-height: 3rem;
+    }
+
+    .main-video .layer .info {
+        bottom: 1rem;
+        left: 1rem;
+        width: 150px;
+    }
+
+    .main-video .layer .icons {
+        bottom: 1rem;
+        right: 1rem;
+    }
+
+    .main-video .layer .icons i {
+        margin-inline: 0;
+        margin-left: .5rem;
+        font-size: 1.3rem;
     }
 
     .form__content {
