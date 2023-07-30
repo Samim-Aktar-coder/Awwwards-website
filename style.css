@@ -500,12 +500,15 @@ header {
     bottom: -200%;
     opacity: 0;
     pointer-events: none;
+    transition: bottom .3s;
+    transition: opacity 0s;
 }
 
 .fixed-nav.active .main__menu-modal {
     bottom: 100%;
     opacity: 1;
     pointer-events: initial;
+    transition: opacity .2s linear .3s;
 }
 
 
