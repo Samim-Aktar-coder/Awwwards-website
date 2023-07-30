@@ -578,6 +578,7 @@ header {
     white-space: nowrap;
     margin-top: 1.5rem;
     width: 100%;
+    pointer-events: none;
 }
 
 .sliding-banner::-webkit-scrollbar {
@@ -2568,7 +2569,8 @@ tbody td {
         flex-direction: column;
         width: 100%;
     }
-    .password-box .input__control{
+
+    .password-box .input__control {
         width: 100%;
     }
 }
@@ -2693,5 +2695,20 @@ tbody td {
 
     .home .heading {
         --large-font-size: 2rem;
+    }
+
+    .directory-header {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .directory-header .badge {
+        margin-left: auto;
+    }
+
+    .directory-slider-container {
+        display: flex;
+        justify-content: flex-end;
+        margin-left: auto;
     }
 }
