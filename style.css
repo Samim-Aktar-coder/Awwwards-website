@@ -999,6 +999,7 @@ header {
 
 .more-link p {
     font-size: var(--h4-font-size);
+    text-align: center;
 }
 
 /*!============= MARKET ============ */
