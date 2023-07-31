@@ -183,6 +183,9 @@ header {
     height: 100%;
     flex-basis: 90%;
     background: transparent;
+    color: black;
+}
+.search-bar.show input {
     color: white;
 }
 
@@ -2702,7 +2705,9 @@ tbody td {
 
     .form__content {
         width: 95%;
+        margin-block: 1rem;
     }
+
 }
 
 @media screen and (max-width:380px) {
