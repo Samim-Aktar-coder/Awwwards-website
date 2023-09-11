@@ -1,4 +1,5 @@
-[![MasterHead](https://raw.githubusercontent.com/Samim-Aktar-coder/Awwwards-website/main/Github%20Banner.png)](https://twitter.com/hellosamaktr)
+[![MasterHead](https://raw.githubusercontent.com/Samim-Aktar-coder/Awwwards-website/main/Github%20Banner.png)](https://awwwards-website.netlify.app/)
+### Live: [Click Here](https://awwwards-website.netlify.app/)
 
 # Awwwards website Clone
 
