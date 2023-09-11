@@ -1,4 +1,4 @@
-[![MasterHead]('https://github.com/Samim-Aktar-coder/Awwwards-website/blob/main/Github%20Banner.png')](https://twitter.com/hellosamaktr)
+[![MasterHead]('https://raw.githubusercontent.com/Samim-Aktar-coder/Awwwards-website/main/Github%20Banner.png')](https://twitter.com/hellosamaktr)
 
 # Awwwards website Clone
 
