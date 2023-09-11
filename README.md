@@ -1,7 +1,7 @@
 [![MasterHead](https://raw.githubusercontent.com/Samim-Aktar-coder/Awwwards-website/main/Github%20Banner.png)](https://awwwards-website.netlify.app/)
 ### Live: [Click Here](https://awwwards-website.netlify.app/)
 
-# Awwwards website Clone
+# 🚀 Awwwards website Clone
 
 I created this clone of Awwwards webiste using HTML, CSS, and Javascript. 
 
@@ -11,7 +11,7 @@ I created this clone of Awwwards webiste using HTML, CSS, and Javascript.
 Built with HTML, CSS, Vanilla Javascript.
 
 
-## Author
+## 🙋‍♂️ Author
 
 - [@SamimAktar](https://github.com/Samim-Aktar-coder)
 
